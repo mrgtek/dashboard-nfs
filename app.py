@@ -75,7 +75,7 @@ if df is not None:
     st.markdown("---")
     st.markdown("### 📋 Dados Detalhados")
     
-    tab1, tab2, tab3, tab4 = st.tabs(["RESUMO", "UTILIZADA", "NEGADA", "ERRO"])
+    tab1, tab2, tab3, tab4 = st.tabs(["RESUMO", "UTILIZADA", "NÃO UTILIZADA", "ESTORNADA"])
     
     with tab1:
         resumo = []
