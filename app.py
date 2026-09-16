@@ -8,7 +8,7 @@ st.set_page_config(page_title="Dashboard KPIs - Notas Fiscais", page_icon="📊"
 @st.cache_data(ttl=3600)
 def load_data():
     try:
-        df = pd.read_excel("Resultado66.xlsx")
+        df = pd.read_excel("BASE_XML.xlsx")
         df['DATA_EMISSAO'] = pd.to_datetime(df['DATA_EMISSAO'], format='%d/%m/%Y')
         df['MES'] = df['DATA_EMISSAO'].dt.strftime('%m/%Y')
         df['MES_NUM'] = df['DATA_EMISSAO'].dt.to_period('M')
