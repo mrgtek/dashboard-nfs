@@ -20,7 +20,7 @@ st.markdown(f"🕐 Atualizado em: {datetime.now().strftime('%d/%m/%Y às %H:%M:%
 df = load_data()
 
 if df is not None:
-    status_labels = {'U': 'Utilizada', 'N': 'Negada', 'E': 'Erro', 'C': 'Cancelada', 'B': 'Bloqueada'}
+    status_labels = {'U': 'Utilizada', 'N': 'NÃO_Utilizada', 'E': 'Estornada', 'C': 'Cancelada', 'B': 'Bloqueada'}
     df['STATUS_LABEL'] = df['STATUS'].map(status_labels)
     
     st.markdown("### 📈 Indicadores Principais")
